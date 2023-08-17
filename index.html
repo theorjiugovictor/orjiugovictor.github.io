@@ -23,12 +23,17 @@
       background-size: cover;
     }
     
-    h1, h2 {
-    font-size: 24px; /* Set the desired font size */
+    h1 {
+    font-size: 330px; /* Set the desired font size */
   margin-top: 10px; /* Add spacing between the h2 and the previous content */
       margin: 0 auto;
       text-align: center;
     }
+    h2 {
+    font-size: 24px; /* Set the desired font size */
+  margin-top: 10px; /* Add spacing between the h2 and the previous content */
+      margin: 0 auto;
+      text-align: center;
 
     .profile-picture {
       max-width: 200px;
@@ -67,6 +72,9 @@
     section {
       margin-bottom: 40px;
     }
+    .animated-text.animation-start span {
+      animation: aestheticTextAnimation ${Math.random() * 1 + 1}s infinite alternate;
+                                         }
  .google-slides-embed {
       position: relative;
       overflow: hidden;
