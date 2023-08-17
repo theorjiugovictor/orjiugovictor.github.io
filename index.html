@@ -163,21 +163,5 @@
   <footer>
     <p>&copy; 2023 Orjiugo Victor</p>
   </footer>
-   <script>
-    // Aesthetic Text Animation with JavaScript
-    const textElements = document.querySelectorAll('.animated-text');
-
-    textElements.forEach(element => {
-      const text = element.textContent;
-      element.innerHTML = '';
-
-      text.split('').forEach(char => {
-        const charElement = document.createElement('span');
-        charElement.textContent = char;
-        charElement.style.animation = `aestheticTextAnimation ${Math.random() * 1 + 1}s infinite alternate`;
-        element.appendChild(charElement);
-      });
-    });
-  </script>
 </body>
 </html>
