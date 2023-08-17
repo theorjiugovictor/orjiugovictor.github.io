@@ -5,14 +5,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-   <style>
     body {
       font-family: 'Arial', sans-serif;
       color: #333;
       background-image: url('devops2.jpg'); /* Replace with your image URL */
       background-size: cover;
-      background-color: rgba(255, 255, 255, 5); 
-      background-color: #f4f4f4;
+      background-color: rgba(255, 255, 255, 0.5);
       margin: 0;
     }
 
@@ -27,7 +25,7 @@
       margin: 0 auto;
       text-align: center;
     }
-    
+
     .profile-picture {
       max-width: 200px;
       height: auto;
@@ -36,16 +34,21 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
 
-      .social-icons {
+    .social-icons {
       list-style: none;
       padding: 0;
       margin-top: 20px;
       text-align: center;
-      display: flex; /* Arrange icons horizontally */
     }
 
     .social-icons li {
+      display: inline-block;
       margin: 0 10px;
+    }
+
+    .social-icons a {
+      color: #ff6b6b; /* Updated color */
+      font-size: 2em;
     }
 
     main {
@@ -56,46 +59,11 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
-    
+
     section {
       margin-bottom: 40px;
     }
 
-    .google-slides-embed {
-      position: relative;
-      overflow: hidden;
-      padding-top: 56.25%;
-    }
-
-    .google-slides-embed iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      overflow: hidden;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-    footer {
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-
-      /* Animated Background Section */
     .animated-bg {
       background-image: url('animated-bg.gif'); /* Replace with your animated background URL */
       background-size: cover;
@@ -107,9 +75,7 @@
       0% { background-position: 0 0; }
       100% { background-position: 100% 100%; }
     }
-      }
-    
-    /* Aesthetic Text Animation */
+
     @keyframes aestheticTextAnimation {
       0% { opacity: 0.7; transform: translateY(0); }
       100% { opacity: 1; transform: translateY(-2px); }
@@ -147,30 +113,29 @@
     <section class="animated-bg">
       <div class="animated-text">
         <h2 style="color: #333; font-size: 1.5em;">Bio</h2>
-        <p style="color: #333;">Victor Orjiugo, a skilled AWS Cloud expert, designs secure, scalable solutions as a Solutions Architect. With deep expertise in apps, DevOps, and AI integration, he drives streamlined processes. Victor's customer-centric approach and commitment to innovation make him a trusted advisor. Outside of work, he enjoys swimming and practices judo, reflecting his dedication and discipline. He aspires to achieve AWS Certified DevOps Engineer status, further enhancing cloud security and enabling digital transformation</p>
-      <p style="color: #333; font-size: 1.0em;">Want to know more about Victor? Check out a my Curriculum Vitae: <a href="https://docs.google.com/document/d/1Ego42PzrFEpMQwd9evSHZIO9u0NeBHtURGDw-yjdBew/edit?usp=sharing">Orjiugo Victor Curriculum Vitae</a></p>
+        <p style="color: #333;">Victor Orjiugo, a skilled AWS Cloud expert, designs secure, scalable solutions as a Solutions Architect. With deep expertise in apps, DevOps, and AI integration, he drives streamlined processes. Victor's customer-centric approach and commitment to innovation make him a trusted advisor. Outside of work, he enjoys swimming and practices judo, reflecting his dedication and discipline. He aspires to achieve AWS Certified DevOps Engineer status, further enhancing cloud security and enabling digital transformation.</p>
+        <p style="color: #333; font-size: 1.0em;">Want to know more about Victor? Check out my Curriculum Vitae: <a href="https://docs.google.com/document/d/1Ego42PzrFEpMQwd9evSHZIO9u0NeBHtURGDw-yjdBew/edit?usp=sharing">Orjiugo Victor Curriculum Vitae</a></p>
       </div>
     </section>
     <section>
       <div class="animated-text">
-        <h2 style="color: #333 font-size: 1.5em;">Portfolio</h2>
+        <h2 style="color: #333; font-size: 1.5em;">Portfolio</h2>
         <p style="color: #333; font-size: 1.0em;">Explore my latest projects.</p>
       </div>
-  <div class="google-slides-embed">
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjljDcfcd913wkpLBlxbam64JrygQy6G3wGn25E0GTV_eGsQRiUsrYB8WbJ9Fz2GOj6bpf0m04gfAF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
-  </div>
-  <p style="color: #333; font-size: 1.0em;>View my portfolio on Google Slides: <a href="https://docs.google.com/presentation/d/1M1U2zPU_4M5fX0-BdDX7FSDIiQaPpEHH1L9uITvstgQ/edit?usp=sharing" target="_blank">Orjiugo Victor Portfolio</a></p>
+      <div class="google-slides-embed">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTjljDcfcd913wkpLBlxbam64JrygQy6G3wGn25E0GTV_eGsQRiUsrYB8WbJ9Fz2GOj6bpf0m04gfAF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+      <p style="color: #333; font-size: 1.0em;">View my portfolio on Google Slides: <a href="https://docs.google.com/presentation/d/1M1U2zPU_4M5fX0-BdDX7FSDIiQaPpEHH1L9uITvstgQ/edit?usp=sharing" target="_blank">Orjiugo Victor Portfolio</a></p>
     </section>
     <section>
-       <div class="animated-text">
-        <h2 style="color: #333 font-size: 1.5em;">Portfolio</h2>
-        <h2 style="color: #333; 1.5em;">Elevator Pitch</h2>
+      <div class="animated-text">
+        <h2 style="color: #333; font-size: 1.5em;">Elevator Pitch</h2>
         <p style="color: #333; font-size: 1.0em;">Discover my elevator pitch.</p>
       </div>
-  <div class="video-container">
-    <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/pSyxx933ivU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>></iframe>
-  </div>
-  <p style="color: #333; font-size: 1.0em;>View my Elevator pitch on YouTube: <a href="https://youtu.be/pSyxx933ivU">Orjiugo Victor Elevator pitch</a></p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pSyxx933ivU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p style="color: #333; font-size: 1.0em;">View my Elevator pitch on YouTube: <a href="https://youtu.be/pSyxx933ivU">Orjiugo Victor Elevator pitch</a></p>
     </section>
   </main>
   <footer>
