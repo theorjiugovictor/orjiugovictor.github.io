@@ -19,6 +19,8 @@
       color: #fff;
       text-align: center;
       padding: 80px 0;
+      background-image: url('animated-bg.gif'); /* Replace with your animated background URL */
+      background-size: cover;
     }
 
     h1, h2 {
@@ -63,7 +65,40 @@
     section {
       margin-bottom: 40px;
     }
+ .google-slides-embed {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+    }
 
+    .google-slides-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
     .animated-bg {
       background-image: url('animated-bg.gif'); /* Replace with your animated background URL */
       background-size: cover;
@@ -81,22 +116,6 @@
       100% { opacity: 1; transform: translateY(-2px); }
     }
   </style>
-  <script>
-    // Aesthetic Text Animation with JavaScript
-    const textElements = document.querySelectorAll('.animated-text');
-
-    textElements.forEach(element => {
-      const text = element.textContent;
-      element.innerHTML = '';
-
-      text.split('').forEach(char => {
-        const charElement = document.createElement('span');
-        charElement.textContent = char;
-        charElement.style.animation = `aestheticTextAnimation ${Math.random() * 1 + 1}s infinite alternate`;
-        element.appendChild(charElement);
-      });
-    });
-  </script>
 </head>
 <body>
   <header>
@@ -110,7 +129,7 @@
     </ul>
   </header>
   <main>
-    <section class="animated-bg">
+    <section>
       <div class="animated-text">
         <h2 style="color: #333; font-size: 1.5em;">Bio</h2>
         <p style="color: #333;">Victor Orjiugo, a skilled AWS Cloud expert, designs secure, scalable solutions as a Solutions Architect. With deep expertise in apps, DevOps, and AI integration, he drives streamlined processes. Victor's customer-centric approach and commitment to innovation make him a trusted advisor. Outside of work, he enjoys swimming and practices judo, reflecting his dedication and discipline. He aspires to achieve AWS Certified DevOps Engineer status, further enhancing cloud security and enabling digital transformation.</p>
@@ -141,5 +160,21 @@
   <footer>
     <p>&copy; 2023 Orjiugo Victor</p>
   </footer>
+   <script>
+    // Aesthetic Text Animation with JavaScript
+    const textElements = document.querySelectorAll('.animated-text');
+
+    textElements.forEach(element => {
+      const text = element.textContent;
+      element.innerHTML = '';
+
+      text.split('').forEach(char => {
+        const charElement = document.createElement('span');
+        charElement.textContent = char;
+        charElement.style.animation = `aestheticTextAnimation ${Math.random() * 1 + 1}s infinite alternate`;
+        element.appendChild(charElement);
+      });
+    });
+  </script>
 </body>
 </html>
